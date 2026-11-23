@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#eaf3f8" />
+  <meta name="application-version" content="3.0.4" />
+  <meta name="description" content="云迹 CLOUD ATLAS——一座可以探索、收藏与记录的数字天空博物馆。" />
+  <title>云迹 CLOUD ATLAS · 收藏天空的每一种模样</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=3.0.4" />
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+  <header class="site-header">
+    <a class="brand" href="#home" data-page="home" aria-label="云迹首页">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg></span>
+      <span class="brand-copy"><strong>云迹</strong><small>CLOUD ATLAS</small></span>
+    </a>
+    <nav class="main-nav" aria-label="主导航">
+      <button class="nav-link active" data-page="home">首页</button>
+      <button class="nav-link" data-page="explore">云朵探索</button>
+      <button class="nav-link" data-page="atlas">云朵图鉴</button>
+      <button class="nav-link" data-page="journal">天空明信片</button>
+      <button class="nav-link" data-page="colors">色彩实验室</button>
+    </nav>
+    <div class="header-actions">
+      <button class="header-clouds-link" data-page="myclouds" aria-label="进入我的云图">
+        <span class="header-clouds-icon">☁</span><span>我的云图</span>
+      </button>
+      <button class="header-collection-link" data-page="collection" aria-label="打开我的收藏"><span class="header-heart">♡</span><span>收藏馆</span><span class="tiny-count" id="favorite-count">0</span></button>
+      <button class="profile-button" data-page="stats"><span class="profile-avatar">✦</span><span>天空档案</span></button>
+      <button class="mobile-menu" id="mobile-menu" aria-label="打开菜单">☰</button>
+    </div>
+  </header>
+
+  <main id="app" class="page-shell" aria-live="polite"></main>
+
+  <footer class="site-footer">
+    <div class="footer-brand"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z" /></svg></span><div><strong>云迹 CLOUD ATLAS</strong><small>收藏天空的每一种模样。</small></div></div>
+    <div class="footer-note"><strong>一座关于云朵、光线与日常片刻的数字收藏馆。</strong><small>你上传的照片仅保存在当前浏览器中。</small></div>
+    <div class="footer-nav" aria-label="页脚导航">
+      <button data-page="explore">探索云朵</button>
+      <button data-page="atlas">云朵图鉴</button>
+      <button data-page="myclouds">我的云图</button>
+      <button data-page="collection">收藏馆</button>
+      <button data-page="stats">天空档案</button>
+      <button data-page="sources">数据来源</button>
+    </div>
+    <div class="footer-copyright">© 2026 CLOUD ATLAS</div>
+  </footer>
+
+  <div id="modal-root"></div>
+  <script src="data.js"></script>
+  <script src="app.js?v=3.0.4"></script>
+</body>
+</html>

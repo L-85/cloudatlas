@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720"><defs>
+      <linearGradient id="sky" x1="0" y1="0" x2="0.85" y2="1"><stop stop-color="#47627c"/><stop offset="1" stop-color="#d7d9dd"/></linearGradient>
+      <linearGradient id="cloud" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f9f7f0"/><stop offset="1" stop-color="#8295a7"/></linearGradient>
+      <radialGradient id="glow"><stop stop-color="#f0c8b8" stop-opacity=".85"/><stop offset="1" stop-color="#f0c8b8" stop-opacity="0"/></radialGradient>
+      <filter id="blur"><feGaussianBlur stdDeviation="22"/></filter>
+      <filter id="soft"><feGaussianBlur stdDeviation="5"/></filter>
+    </defs><rect width="1280" height="720" fill="url(#sky)"/><circle cx="180" cy="120" r="230" fill="url(#glow)" opacity=".55"/><circle cx="1080" cy="135" r="150" fill="url(#glow)" opacity=".5"/>
+        <path d="M210 630 Q175 565 230 505 Q185 420 275 370 Q250 260 355 235 Q370 125 500 155 Q570 50 700 112 Q820 35 930 130 Q1050 105 1090 225 Q1200 265 1150 370 Q1220 470 1135 540 L1160 660Z" fill="url(#cloud)"/>
+        <path d="M235 350 Q300 300 365 318 Q395 180 520 190 Q595 82 700 145 Q815 78 910 175 Q1040 150 1080 260 Q1140 290 1140 360" fill="none" stroke="#f9f7f0" stroke-width="26" opacity=".6" stroke-linecap="round"/>
+        <path d="M-20 670 Q250 610 470 650 T940 630 T1340 660" stroke="#f9f7f0" stroke-width="80" opacity=".22" fill="none" filter="url(#blur)"/><path d="M0 640 Q300 600 620 640 T1280 630 V720 H0Z" fill="#fff" opacity=".12"/></svg>

@@ -1,0 +1,9 @@
+{
+  "name": "cloud-atlas",
+  "version": "3.0.4",
+  "private": true,
+  "description": "Cloud Atlas - a cloud exploration and collection web app",
+  "scripts": {
+    "start": "python -m http.server 8000"
+  }
+}
